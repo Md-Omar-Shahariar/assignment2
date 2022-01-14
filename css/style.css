@@ -47,10 +47,11 @@ nav {
   font-size: 16px;
   color: var(--common-font-color);
 }
-.search {
-  font-size: 20px;
-  padding: 30px 15px;
+.nav-item ul li a i {
+  font-size: 24px;
+  color: black;
 }
+
 .cart {
   font-size: 30px;
   padding: 30px 15px;
