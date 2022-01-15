@@ -16,17 +16,20 @@
 body {
   max-width: 1920px;
   margin: 0 auto;
+  background-color: #aaaaaa;
 }
 
 /* Heading */
 
 .head-container {
-  width: 70%;
+  width: 1300px;
   margin: 0 auto;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 100px;
+  padding: 0 50px;
 }
 
 /* Nav */
@@ -129,17 +132,133 @@ nav {
 /* Brand */
 
 .brand-container {
-  width: 95%;
+  width: 1110px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 
-  border-top: 1px solid #aaaaaa;
-  border-bottom: 1px solid #aaaaaa;
+  border-top: 1px solid #c0ccda;
+  border-bottom: 1px solid #c0ccda;
   margin-bottom: 20px;
 }
 .brand-container img {
   margin: 30px 20px;
+}
+
+/* body */
+
+.body-container {
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body-container .product-container header h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--common-font-color);
+  padding-bottom: 50px;
+}
+.body-container .product-container {
+  width: 1047px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-container .products {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding-bottom: 40px;
+}
+.product {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 476px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.product article img {
+  height: 256px;
+  width: 300px;
+}
+.product article h1 {
+  padding-top: 10px;
+  font-size: 28px;
+  font-weight: 500;
+}
+.price {
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+.star i {
+  color: #fb8200;
+}
+.rating span {
+  padding-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+article p {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 25px;
+}
+.product-container footer {
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+.product-container footer a {
+  text-decoration: none;
+  color: var(--background-color);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.feature-product {
+  height: 270px;
+  display: grid;
+  grid-template-columns: 404px 1fr;
+  width: 100%;
+}
+.feature-product .feature-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  margin-left: 50px;
+}
+.feature-product .feature-right h1 {
+  font-size: 38px;
+  font-weight: bold;
+}
+.feature-product .feature-right p {
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 20px;
+  color: var(--common-font-color);
+}
+.feature-product .feature-right a {
+  padding: 10px 20px;
+  background-color: var(--background-color);
+
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
