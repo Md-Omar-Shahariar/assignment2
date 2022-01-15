@@ -318,3 +318,229 @@ article p {
 .footer-info span a i {
   color: white;
 }
+
+/* Media query */
+
+@media screen and (max-width: 688px) {
+  .body {
+    width: 100%;
+  }
+  .banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .banner-left {
+    order: 2;
+  }
+  .banner-right img {
+    height: 257px;
+    width: 257px;
+  }
+  .banner-right img.img2 {
+    top: 51px;
+    left: 22px;
+    height: 190px;
+    width: 202px;
+  }
+  .head-container {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+  }
+
+  .banner-left article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .banner-left article h1 {
+    font-size: 28px;
+  }
+  nav {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .body-container {
+    width: 100%;
+  }
+  .body-container .product-container {
+    width: 100%;
+  }
+
+  .product-container .products {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .feature-product {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .feature-product .feature-right {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .feature-product .feature-right h1,
+  .banner-left article h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .feature-product .feature-right p,
+  .banner-left article p {
+    text-align: center;
+  }
+  .feature-product .feature-right article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .brand-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-column-gap: 0;
+    align-items: center;
+    justify-items: stretch;
+    justify-content: space-between;
+  }
+  .feature-product .feature-left {
+    order: 2;
+  }
+
+  .feature-product .feature-left img {
+    width: 299px;
+    height: 188px;
+  }
+  .feature-product {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+  }
+  .nav-item ul li {
+    display: none;
+  }
+  .product-container footer a {
+    margin-right: calc(calc(100vw - 330px) / 2);
+  }
+}
+
+/* Tablet screen */
+
+@media screen and (min-width: 689px) and (max-width: 1299px) {
+  .body {
+    width: 100%;
+  }
+  .head-container {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+  }
+  .banner {
+  }
+  .body-container {
+    width: 100%;
+  }
+  .body-container .product-container {
+    width: 100%;
+  }
+
+  .product-container .products {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .feature-product {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  nav {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .brand-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-column-gap: 0;
+    align-items: center;
+    justify-items: stretch;
+    justify-content: space-between;
+  } /*
+  .banner-left {
+    order: 2;
+  }
+  .banner-right img {
+    height: 257px;
+    width: 257px;
+  }
+  .banner-right img.img2 {
+    top: 51px;
+    left: 22px;
+    height: 190px;
+    width: 202px;
+  }
+
+
+  .banner-left article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .banner-left article h1 {
+    font-size: 28px;
+  }
+
+
+
+  .feature-product .feature-right {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .feature-product .feature-right h1,
+  .banner-left article h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .feature-product .feature-right p,
+  .banner-left article p {
+    text-align: center;
+  }
+  .feature-product .feature-right article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .feature-product .feature-left {
+    order: 2;
+  }
+
+  .feature-product .feature-left img {
+    width: 299px;
+    height: 188px;
+  }
+  .feature-product {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+  }
+  .product-container footer a {
+    margin-right: calc(calc(100vw - 330px) / 2);
+  } */
+}
