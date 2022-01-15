@@ -14,7 +14,6 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  max-width: 1920px;
   margin: 0 auto;
   background-color: #aaaaaa;
 }
@@ -28,7 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
   padding: 0 50px;
 }
 
@@ -218,7 +217,7 @@ article p {
 }
 .product-container footer {
   margin-left: auto;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 .product-container footer a {
   text-decoration: none;
@@ -230,8 +229,10 @@ article p {
 .feature-product {
   height: 270px;
   display: grid;
+  align-content: center;
   grid-template-columns: 404px 1fr;
   width: 100%;
+  margin-bottom: 120px;
 }
 .feature-product .feature-right {
   display: flex;
@@ -261,4 +262,46 @@ article p {
   font-weight: bold;
   color: white;
   text-decoration: none;
+}
+/* Footer */
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  background-color: #0a0826;
+  color: white;
+}
+.footer-container .footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-info h1 {
+  font-size: 24px;
+  line-height: 36px;
+}
+.footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer-info span {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.footer-info span i {
+  position: relative;
+  height: 32px;
+  width: 32px;
+
+  margin: 0 10px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #1c1a36;
 }
