@@ -600,7 +600,7 @@ article p {
     display: grid;
     align-content: center;
     grid-template-columns: 404px 1fr;
-    width: 100%;
+    width: 96%;
     margin-bottom: 120px;
   }
   .feature-product .feature-right {
