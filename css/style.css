@@ -69,7 +69,15 @@ nav {
   list-style: none;
   padding: 30px 15px;
   color: var(--common-font-color);
+  position: relative;
 }
+.nav-item ul li:hover {
+  border-bottom: 2px solid var(--background-color);
+}
+.cart:hover {
+  border-bottom: 2px solid var(--background-color);
+}
+
 .nav-item ul li a {
   text-decoration: none;
   font-weight: 600;
@@ -104,7 +112,35 @@ nav {
 .banner-left article h1 {
   color: var(--common-font-color);
   font-size: 52px;
+  overflow: hidden;
 }
+/* Typing */
+
+h1 span.typing {
+  position: relative;
+  color: var(--background-color);
+}
+h1 span.typing::after {
+  content: "";
+  top: 0;
+  height: 60px;
+  width: 300px;
+  display: block;
+  position: absolute;
+  left: 0;
+  animation: type 5s infinite;
+  background-color: white;
+}
+
+@keyframes type {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+  }
+}
+
 .banner-left article p {
   padding: 20px 0;
   font-size: 16px;
@@ -121,6 +157,11 @@ nav {
   font-weight: bold;
   color: white;
   text-decoration: none;
+}
+.banner-left article a:hover {
+  background-color: white;
+  color: var(--background-color);
+  border: 2px solid var(--background-color);
 }
 .banner-left article a i {
   padding-left: 10px;
@@ -285,6 +326,12 @@ article p {
   color: white;
   text-decoration: none;
 }
+.feature-product .feature-right a:hover {
+  background-color: white;
+  color: var(--background-color);
+  border: 2px solid var(--background-color);
+}
+
 /* Footer */
 .footer-container {
   width: 100%;
@@ -361,13 +408,21 @@ article p {
 
     background-color: var(--background-color);
     transform: translatex(-200px);
-    transition: 0.5s ease-in-out;
+    transition: 0.3s;
   }
   .nav-item ul li {
     padding: 10px 20px;
   }
+  .nav-item ul li a,
+  .nav-item ul li a i {
+    color: white;
+  }
   #nav-toggler:checked ~ ul {
     transform: translatex(0);
+    transition: 0.7s ease-in-out;
+  }
+  #nav-toggler:checked ~ ul li:hover {
+    border-bottom: 2px solid white;
   }
 
   .banner {
