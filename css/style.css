@@ -15,7 +15,7 @@
 }
 body {
   margin: 0 auto;
-  background-color: #aaaaaa;
+  background-color: white;
 }
 
 /* Heading */
@@ -186,6 +186,7 @@ nav {
   height: 476px;
   border-radius: 10px;
   background-color: white;
+  filter: drop-shadow(0 0 0.2rem rgb(216, 195, 195));
 }
 
 .product article img {
@@ -300,7 +301,8 @@ article p {
   position: relative;
 }
 
-.footer-info span i {
+.footer-info span a {
+  text-decoration: none;
   position: relative;
   height: 32px;
   width: 32px;
@@ -312,4 +314,7 @@ article p {
   align-items: center;
 
   background-color: #1c1a36;
+}
+.footer-info span a i {
+  color: white;
 }
